@@ -4,7 +4,6 @@ pipeline {
         string(name: 'name_container', defaultValue: 'web-server', description: 'nombre del docker')
         string(name: 'name_imagen', defaultValue: 'web-server', description: 'nombre de la imagen')
         string(name: 'tag_imagen', defaultValue: 'latest', description: 'etiqueta de la imagen')
-#        string(name: 'puerto_imagen', defaultValue: '8081', description: 'puerto a publicar')
 	choice choices: ['8081','8082','8083'], description: '', name: 'PUERTO'
     }
     environment {
